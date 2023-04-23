@@ -1,239 +1,110 @@
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #ffffff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Style the logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #000000;
+}
 
 
-
-
-
-
-
-/* :root {
-    font-family: 'Space Grotesk';
-    --primary-color: #7F56D9;
-    --secondary-color: #5A5A5A;
-  }
-  
-  nav {
+/* Style the links in the navigation bar */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+  .links {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 100px;
+    justify-content: center;
+    /* Center the links horizontally */
+    list-style-type: none;
   }
-  
-  nav img {
-    height: 70px;
+
+  li {
+    margin-right: 15px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
   }
-  
-  .logo {
+
+
+  /* Style the login section in the navigation bar */
+  .login {
     display: flex;
     align-items: center;
-  } 
-  
-  .navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    min-width: 70%;
+    margin-left: 15px;
   }
-  
+
+  a {
+    margin-right: 15px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+
+  /* Style the hamburger menu icon */
   .hamburger {
     display: none;
   }
-  
-  .links {
-    display: flex;
-    justify-content: space-around;
-    gap: 1.5rem;
-  }
-  
-  .links li {
-    list-style-type: none;
-    color: var(--secondary-color);
-  }
-  
-  .login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .login a {
-    color: var(--secondary-color);
-    text-decoration: none;
-  }
-  
-  .login button {
-    background-color: var(--primary-color);
-    color: white;
-    border-style: none;
-    border-radius: 0.2rem;
-    padding: 0.6rem;
-  }
-  
-  @media screen and (max-width: 688px ) {
-    nav {
-      margin: 1rem;
-    }
-    .links {
-      display: none;
-    }
-    .login {
-      display: none;
-    }
-    .navigation {
-      justify-content: flex-end;
-      min-width: 30%;
-    }
-    .hamburger {
-      display: block;
-      height: 40px;
-    }
-  } */
 
 
-
-
-
-body, ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Set a background color for the body */
-  body {
-    background-color: #f2f2f2;
-  }
-  
-  /* Style the navigation bar */
-  nav {
-    background-color: #ffffff;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  
-  /* Style the logo */
-  .logo {
-    display: flex;
-    align-items: center;
-}
-    img {
-      height: 40px;
-      margin-right: 10px;
-    }
-  
-    h3 {
-      font-size: 24px;
-      color: #000000;
-    }
-  
-  
-  /* Style the links in the navigation bar */
-  .navigation {
-    display: flex;
-    align-items: center;
-}
-    .links {
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Center the links horizontally */
-      list-style-type: none;
-    }
-      li {
-        margin-right: 15px;
-        cursor: pointer;
-        color: #000000;
-        font-weight: bold;
-      }
-    
-    
-   
-    .login {
-      display: flex;
-      align-items: center;
-      margin-left: 15px;
-    }
-      a {
-        margin-right: 15px;
-        color: #000000;
-        text-decoration: none;
-      }
-  
-      button {
-        background-color: #007bff;
-        color: #ffffff;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-      }
-   
-    
-    /* Style the hamburger menu icon */
-    .hamburger {
-      display: none;
-    }
-
-  
-  .card{
+  .card {
     border: 2px solid red;
   }
-  
-  footer {
-    background-color: #f6f6f6;
-    padding: 50px 0;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #666;
-  }
-  
-  
+
+
   /* Add responsive styles for smaller screens */
-/* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .navigation {
       .links {
         display: none;
       }
-  
+
       .login {
         margin-right: 0;
       }
-  
+
       .hamburger {
         display: block;
         cursor: pointer;
       }
     }
-}
-   */
-  
-  
+  }
