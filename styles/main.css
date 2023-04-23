@@ -1,0 +1,212 @@
+body {
+  font-family: "Space Grotesk";
+}
+
+.space-flex, .links, .navigation, nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  align-items: center;
+  height: 100px;
+}
+nav img {
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  align-items: center;
+  gap: 2rem;
+  min-width: 70%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.links {
+  gap: 1.5rem;
+}
+.links li {
+  list-style-type: none;
+  color: #5A5A5A;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.login a {
+  color: #5A5A5A;
+  text-decoration: none;
+}
+.login button {
+  background-color: #7F56D9;
+  color: white;
+  border-style: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  --main-font-color: #101828;
+  --secondary-color: #717781;
+  --primary-color: #7F56D9;
+  --border-color: #d4d4d4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ### section ### */
+section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+section p {
+  color: var(--secondary-color);
+}
+
+/* ### flexbox of the form #### */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 60%;
+  margin: auto;
+}
+
+input, textarea, button {
+  box-shadow: 0px 3px 8px var(--secondary-color);
+  border: solid 1px var(--border-color);
+  border-radius: 5px;
+  padding: 0.7rem;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+label {
+  text-shadow: 2px 4px 4px var(--border-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ### first and last name section ### */
+.names {
+  display: flex;
+  /* add warp here to move input fields on smaller screens */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.first, .last {
+  display: flex;
+  flex-direction: column;
+  min-width: 45%;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+/* ### phone input fields in a div  ### */
+.number {
+  margin-top: 1rem;
+}
+
+.mix_input {
+  margin-top: 1rem;
+  box-shadow: 0px 5px 10px gray;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+/* remove the styling of the select */
+select {
+  border-style: none;
+  padding: 0.7rem;
+  margin: 1px;
+}
+
+/* and of the phone number input field  */
+#phone {
+  border-style: none;
+  box-shadow: none;
+  min-width: 50%;
+  max-width: 80%;
+}
+
+/* ### checkbox section ### */
+.check {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.check a {
+  color: var(--secondary-color);
+}
+
+#terms {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+#terms:checked {
+  accent-color: var(--primary-color);
+}
+
+/* ### send button ### */
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-style: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 688px) {
+  nav {
+    margin: 1rem;
+  }
+  .links {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .navigation {
+    justify-content: flex-end;
+    min-width: 30%;
+  }
+  .hamburger {
+    display: block;
+    height: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */
