@@ -1,7 +1,7 @@
 $main-font: 'Space Grotesk';
 $primary-color: #56d5d9;
-$secondary-color: #5a5a5a;
-
+$secondary-color: #605a5a;
+$third-colore: black ;
 body {
   font-family: $main-font;
   line-height: 1.5;
@@ -16,6 +16,10 @@ nav {
   @extend .space-flex;
   align-items: center;
   height: 100px;
+
+/* position: fixed;
+width: 100%; */
+
 
   img {
     height: 70px;
@@ -36,6 +40,7 @@ nav {
 
 .hamburger {
   display: none;
+ 
 }
 
 .links {
@@ -216,7 +221,7 @@ ul{
   list-style: none;
 }
 .footer{
-  background-color: rgb(0, 8, 6);
+  background-color: rgb(3, 31, 24);
   padding: 70px 0;
   border-radius: 15px;
 }
@@ -233,6 +238,7 @@ ul{
   text-transform: capitalize;
   margin-bottom: 30px;
   font-weight: 500;
+
 }
 .col-md-4 ul li a{
 font-size: 17px;
@@ -242,6 +248,7 @@ display: block;
 color:$secondary-color;
 
 }
+
 .col-md-4 ul li {
   color:$secondary-color;
   }
@@ -285,11 +292,15 @@ background-color: #d4d4d4;
     justify-content: flex-end;
     min-width: 30%;
   }
-
+ 
   .hamburger {
     display: block;
     height: 40px;
+    float: none;
+  
   }
+
+  
   .col-md-4{
     width: 100%;
   
@@ -297,3 +308,5 @@ background-color: #d4d4d4;
 
 
 }
+
+

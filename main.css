@@ -11,6 +11,8 @@ body {
 nav {
   align-items: center;
   height: 100px;
+  /* position: fixed;
+  width: 100%; */
 }
 nav img {
   height: 70px;
@@ -36,7 +38,7 @@ nav img {
 }
 .links li {
   list-style-type: none;
-  color: #5a5a5a;
+  color: #605a5a;
 }
 
 .login {
@@ -46,7 +48,7 @@ nav img {
   gap: 1rem;
 }
 .login a {
-  color: #5a5a5a;
+  color: #605a5a;
   text-decoration: none;
 }
 .login button {
@@ -197,7 +199,7 @@ ul {
 }
 
 .footer {
-  background-color: rgb(0, 8, 6);
+  background-color: rgb(3, 31, 24);
   padding: 70px 0;
   border-radius: 15px;
 }
@@ -220,11 +222,11 @@ ul {
   text-transform: capitalize;
   font-weight: 300;
   display: block;
-  color: #5a5a5a;
+  color: #605a5a;
 }
 
 .col-md-4 ul li {
-  color: #5a5a5a;
+  color: #605a5a;
 }
 
 .col-md-4 ul li a:hover {
@@ -240,7 +242,7 @@ ul {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #5a5a5a;
+  color: #605a5a;
 }
 
 .social-links a:hover {
@@ -265,6 +267,7 @@ ul {
   .hamburger {
     display: block;
     height: 40px;
+    float: none;
   }
   .col-md-4 {
     width: 100%;
